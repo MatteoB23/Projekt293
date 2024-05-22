@@ -61,7 +61,7 @@ footer {
     color: #edf5fcff;
     text-align: center;
     padding: 20px;
-    width: 100%;
+    position: static;
 }
 
 footer p {
@@ -72,5 +72,9 @@ footer p {
     nav .nav-link {
         margin: 0;
         padding: 5px 5px;
+    }
+
+    main {
+        align-items: start;
     }
 }
