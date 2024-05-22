@@ -10,9 +10,27 @@ body {
 header {
     background-color: #101935ff;
     color: #edf5fcff;
-    padding: 20px;
-    text-align: center;
-    position: static;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #edf5fcff;
+    display: flex;
+    align-items: center;
+}
+
+nav a span {
+    display: none;
 }
 
 html, body {
@@ -20,27 +38,21 @@ html, body {
     overflow-x: hidden;
 }
 
-h1, p {
-    color: #101935ff;
-}
-
-.nav-link {
-    color: #edf5fcff;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
 main {
     padding: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     flex: 1;
 }
 
+h1, p {
+    color: #101935ff;
+}
+
 form {
     padding: 20px;
-    border-radius: 10px;
+    padding-left: 0;
     max-width: 800px;
     width: 100%;
 }
@@ -87,6 +99,6 @@ footer {
 @media (max-width: 768px) {
     nav .nav-link {
         margin: 0; 
-        padding: 5px 5px;
+        padding: 0 5px;
     }
 }

@@ -10,10 +10,27 @@ body {
 header {
     background-color: #101935ff;
     color: #edf5fcff;
-    padding: 20px;
-    text-align: center;
-    position: static;
-    display: inline-block;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #edf5fcff;
+    display: flex;
+    align-items: center;
+}
+
+nav a span {
+    display: none;
 }
 
 html, body {
@@ -27,13 +44,6 @@ h1, h2, h3, p {
     color: #101935;
 }
 
-.nav-link {
-    color: #edf5fcff;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
 .nav-link.active {
     color: #00ff00; 
 }
@@ -44,13 +54,14 @@ h3 {
 
 main {
     padding: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex: 1;
 }
 
 .portfolio-section {
-    max-width: 1200px;
+    max-width: 900px;
     width: 100%;
     text-align: center;
 }
@@ -87,7 +98,7 @@ footer {
 @media (max-width: 768px) {
     nav .nav-link {
         margin: 0; 
-        padding: 5px 5px;
+        padding: 0 5px;
     }
 
     .portfolio-section {

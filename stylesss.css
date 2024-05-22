@@ -8,16 +8,27 @@ body {
 header {
     background-color: #101935ff;
     color: #edf5fcff;
-    padding: 20px;
-    text-align: center;
-    position: static;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
 }
 
-.nav-link {
-    color: #edf5fcff;
-    padding: 10px 20px;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 20px;
     text-decoration: none;
-    margin: 0 10px;
+    color: #edf5fcff;
+    display: flex;
+    align-items: center;
+}
+
+nav a span {
+    display: none;
 }
 
 .nav-link.active {
@@ -34,6 +45,7 @@ body {
 
 main {
     padding: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +83,7 @@ footer p {
 @media (max-width: 768px) {
     nav .nav-link {
         margin: 0;
-        padding: 5px 5px;
+        padding: 0 5px;
     }
 
     main {
