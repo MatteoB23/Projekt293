@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    background-color: #edf5fcff;
+}
+
+header {
+    background-color: #101935ff;
+    color: #edf5fcff;
+    padding: 20px;
+    text-align: center;
+    position: static;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1, p {
+    color: #101935ff;
+}
+
+.nav-link {
+    color: #edf5fcff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: #101935ff;
+    color: #edf5fcff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #101935ff;
+    color: #edf5fcff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #00ff00; 
+}
+
+#message {
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+    nav .nav-link {
+        margin: 0; 
+        padding: 5px 5px;
+    }
+}
